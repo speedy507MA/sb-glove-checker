@@ -171,7 +171,7 @@ $('.user-lookup-form')[0].addEventListener('submit', async (e) => {
         }
     }
 
-    let tresponse = await fetch('https://roblox-thumbnail-api.joshuawh-srs.workers.dev/v1/batch', {
+    let tresponse = await fetch('https://roblox-thumbnail-api.bqbo.workers.dev/v1/batch', {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -263,7 +263,7 @@ $('#badgeCheck')[0].addEventListener('mouseup', async () => {
 
     do {
         const response = await rateLimitedFetch(
-            `https://roblox-badge-api.joshuawh-srs.workers.dev/v1/universes/2380077519/badges?limit=100&cursor=${nextCursor}`,
+            `https://roblox-badge-api.bqbo.workers.dev/v1/universes/2380077519/badges?limit=100&cursor=${nextCursor}`,
             badgeRateLimit
         );
 
@@ -332,7 +332,7 @@ $('#badgeCheck')[0].addEventListener('mouseup', async () => {
             .map(glove => glove.id);
 
         const response = await rateLimitedFetch(
-            `https://roblox-cloud-api.joshuawh-srs.workers.dev/users/${userId}/inventory-items?maxPageSize=100&filter=badgeIds=${badgeIds.join(',')}`,
+            `https://roblox-cloud-api.bqbo.workers.dev/users/${userId}/inventory-items?maxPageSize=100&filter=badgeIds=${badgeIds.join(',')}`,
             inventoryRateLimit
         );
 
@@ -363,7 +363,7 @@ $('#badgeCheck')[0].addEventListener('mouseup', async () => {
 
         thumbnailRequests.push(
             rateLimitedFetch(
-                'https://roblox-thumbnail-api.joshuawh-srs.workers.dev/v1/batch',
+                'https://roblox-thumbnail-api.bqbo.workers.dev/v1/batch',
                 thumbnailRateLimit,
                 JSON.stringify(thumbnailRequestBody)
             )
@@ -388,7 +388,7 @@ $('#badgeCheck')[0].addEventListener('mouseup', async () => {
     await progressLoop;
 
     let playerRateLimit = [0];
-    const playerResponse = await rateLimitedFetch(`https://roblox-cloud-api.joshuawh-srs.workers.dev/users/${userId}`, playerRateLimit);
+    const playerResponse = await rateLimitedFetch(`https://roblox-cloud-api.bqbo.workers.dev/users/${userId}`, playerRateLimit);
     playerData = await playerResponse.json();
 
     $('#abt1-img')[0].src = $('.uspdp')[0].src;
