@@ -1,0 +1,68 @@
+:root {
+    --panel-background-primary: #323232;
+    --panel-background-secondary: #3C3C3C;
+    --panel-button-close-primary: #D92222;
+    --panel-button-close-secondary: #E23737;
+    --panel-button-close-primary-hover: #9C2B24;
+    --panel-button-close-secondary-hover: #A33731;
+    --panel-button-toggle-primary-disabled: #E23737;
+    --panel-button-toggle-primary-disabled-hover: #A33731;
+    --panel-button-toggle-primary-enabled: #4BDA34;
+    --panel-button-toggle-primary-enabled-hover: #5CA93F;
+    --panel-button-green-primary: #4BDA34;
+    --panel-button-green-secondary: #3CD124;
+    --panel-button-green-primary-hover: #5CA93F;
+    --panel-button-green-secondary-hover: #54A237;
+    --panel-button-green-primary-active: #457E2F;
+    --panel-button-green-secondary-active: #3F7928;
+    --panel-button-text-primary-hover: #C8C8C8;
+    --panel-button-text-primary-active: #969696;
+    --panel-textbox-placeholder: #B3B3B3;
+    --panel-scrollbar: #191919;
+    --panel-checkbox-check: #0F4;
+    --panel-checkbox-ex: #F40;
+    --panel-text-primary: #FFF;
+    --panel-text-secondary: #B9B9B9;
+    --panel-text-pro: #0F4;
+    --panel-text-con: #F40;
+
+    --prompt-background-primary: #151515;
+    --prompt-background-secondary: #121212;
+    --prompt-background-secondary-shadow: #2D2D2D;
+    --prompt-background-shadow: #4E4E4E;
+    --prompt-text-primary: #FFF;
+    --prompt-text-secondary: #9D9D9D;
+    --prompt-button-green-primary: #4BDA34;
+    --prompt-button-green-secondary: #3CD124;
+    --prompt-button-green-primary-hover: #5CA93F;
+    --prompt-button-green-secondary-hover: #54A237;
+    --prompt-button-yellow-primary: #FFC42E;
+    --prompt-button-yellow-secondary: #FA0;
+    --prompt-button-yellow-primary-hover: #C19C3F;
+    --prompt-button-yellow-secondary-hover: #BE882E;
+    --prompt-button-red-primary: #A00;
+    --prompt-button-red-secondary: #9E1414;
+    --prompt-button-red-primary-hover: #79160D;
+    --prompt-button-red-secondary-hover: #711C17;
+    --prompt-button-text-primary-hover: #C8C8C8;
+    --prompt-button-red-text-primary: #CDB0B0;
+    --prompt-button-red-text-primary-hover: #9D8B8A;
+
+    --generic-button-striped-gray-primary: #3C3C3C;
+    --generic-button-striped-gray-secondary: #323232;
+    --generic-button-striped-gray-primary-hover: #2F2F2F;
+    --generic-button-striped-gray-secondary-hover: #272727;
+    --generic-button-striped-text-primary-hover: #C8C8C8;
+    --generic-button-green-primary: #4BDA34;
+    --generic-button-gray-primary: #454545;
+    --generic-button-gray-secondary: #383838;
+}
+
+.noselect {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.nocursor {
+    cursor: default;
+}

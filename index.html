@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slap Battles — Profile Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cdn/css/root/index.css" rel="stylesheet">
+    <script src="cdn/js/jQuery.js" fetchpriority="high" defer></script>
+    <link href="cdn/css/index.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link href="cdn/css/fonts.css" rel="stylesheet">
+    <script src="cdn/js/deferred/index.js" defer></script>
+</head>
+
+<body>
+    <div class="title-bar">
+        <div class="title">
+            <div class="t-cont">
+                <span class="title-text spicy-rice-regular noselect">Slap Battles</span>
+                <div class="title-author">
+                    <span class="subtitle-text fredoka noselect nocursor">By </span>
+                    <span class="subtitle-text tencell fredoka noselect nocursor">Tencell</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-panel-container">
+        <div class="user-panel">
+            <div class="up-content">
+                <form class="user-lookup-form">
+                    <div class="panel-container">
+                        <div class="pc-in">
+                            <input class="panel-textbox fredoka" type="text" placeholder="Player Name" name="username">
+                        </div>
+                    </div>
+                    <div class="panel-container">
+                        <div class="pc-in btn-pc-in">
+                            <button class="panel-button-green fredoka" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="panel-container uselect">
+                    <div class="pc-in">
+                        <div class="user-select">
+                            <div class="us-perm">
+                                <div class="usp-details" id="select-details">
+                                    <div class="usp-chevron">
+                                        <img class="uspc-chevron" src="cdn/images/chevron.right.png">
+                                    </div>
+                                    <div class="uspd-photo">
+                                        <img class="uspdp">
+                                    </div>
+                                    <div class="uspd-name">
+                                        <span class="fredoka nocursor noselect uspdn-display"></span>
+                                        <span class="fredoka nocursor noselect uspdn-at"></span>
+                                    </div>
+                                </div>
+                                <div class="us-dropdown">
+                                    <ul class="us-choices"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc-in confirm-progress" id="pc">
+                    <div class="panel-confirm" id="pc-1">
+                        <div class="panel-confirm-inner">
+                            <button class="panel-button-green fredoka button-wide" id="badgeCheck">
+                                <span>Check Badges</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-progress-green" id="pc-2">
+                        <div class="panel-progress-bar-green fredoka noselect nocursor" id="pc-bar-1">
+                            0%
+                        </div>
+                    </div>
+                    <span class="fredoka noselect">
+                        Requests can take up to a minute to process due to Roblox's API rate limits.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-panel-container" id="upc-about">
+        <div class="user-panel about-panel-in">
+            <div class="up-content about-upc">
+                <div class="up-in">
+                    <div class="about-heading">
+                        <span class="fredoka apd-heading">About</span>
+                    </div>
+                    <div class="about-profile-photo">
+                        <img class="about-profile-image" id="abt1-img" src="">
+                    </div>
+                    <div class="about-profile-details">
+                        <div class="apd-name">
+                            <div class="apd-container">
+                                <span class="fredoka apd-displayname" id="apd1-displayname"></span>
+                            </div>
+                            <div class="apd-container">
+                                <span class="fredoka apd-username" id="apd1-username"></span>
+                            </div>
+                        </div>
+                        <div class="apd-container">
+                            <span class="fredoka apd-joined">Joined:</span>
+                            <span class="fredoka apd-joindate" id="apd1-joindate"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="badges">
+        <div class="badge-grid" id="bg1">
+        </div>
+    </div>
+</body>
+
+</html>
