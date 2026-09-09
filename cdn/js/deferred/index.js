@@ -1,3 +1,5 @@
+import { onRequest } from "../../../functions/api";
+
 // Title Slap
 $('.title-text')[0].addEventListener('mouseup', (e) => {
     let a = new Audio('cdn/audio/slap.mp3');
@@ -431,3 +433,6 @@ $('#badgeCheck')[0].addEventListener('mouseup', async () => {
         $('#bg1')[0].append(badgeItem);
     }
 });
+
+
+onRequest
